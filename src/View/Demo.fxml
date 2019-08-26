@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="812.0" style="-fx-background-color: #F787F7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DemoController">
+   <children>
+      <Pane layoutX="11.0" layoutY="8.0" prefHeight="93.0" prefWidth="601.0" style="-fx-background-color: #54FF9F;" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <ImageView fitHeight="91.0" fitWidth="361.0" layoutX="206.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Styles/Logon%20inicial.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="39.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEMO:" AnchorPane.leftAnchor="39.0">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnVoltar" layoutX="340.0" layoutY="509.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="115.0" style="-fx-padding: 10 22 10 22; -fx-border-color: #54FF9F; -fx-border-width: 2; -fx-border-radius: 33; -fx-background-radius: 50; -fx-font-family: consolas; -fx-font-size: 12; -fx-text-fill: black; -fx-background-insets: 10;" stylesheets="@../Styles/button.css" text="Voltar" AnchorPane.bottomAnchor="14.0" />
+      <ImageView fitHeight="398.0" fitWidth="647.0" layoutX="111.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="59.06451416015625">
+         <image>
+            <Image url="@../Styles/GIFJOGO_2.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

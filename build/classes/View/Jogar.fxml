@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="1071.0" style="-fx-background-color: #F787F7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.JogarController">
+   <children>
+      <AnchorPane layoutX="19.0" layoutY="14.0" prefHeight="52.0" prefWidth="697.0" style="-fx-background-color: #54FF9F;" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <ImageView layoutX="337.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="337.0" AnchorPane.rightAnchor="337.0" AnchorPane.topAnchor="1.0">
+               <image>
+                  <Image url="@../Styles/Logon%20inicial.gif" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnVoltar" layoutX="48.0" layoutY="583.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="106.0" style="-fx-border-radius: 50;" stylesheets="@../Styles/button.css" text="Voltar" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="48.0">
+         <padding>
+            <Insets bottom="462.0" left="32.0" right="37.0" top="320.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btVerificarImg" layoutX="702.0" layoutY="596.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="174.0" style="-fx-border-radius: 50;" stylesheets="@../Styles/button.css" text="Verificar Imagens" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="218.0">
+         <padding>
+            <Insets bottom="462.0" left="32.0" right="37.0" top="320.0" />
+         </padding>
+      </Button>
+      <AnchorPane fx:id="painel_jogo" layoutX="61.0" layoutY="94.0" prefHeight="495.0" prefWidth="992.0" style="-fx-background-color: #54FF9F;" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="94.0">
+         <children>
+            <Label alignment="CENTER" layoutX="35.0" layoutY="454.0" prefHeight="27.0" prefWidth="79.0" style="-fx-background-color: #F787F7; -fx-background-radius: 33; -fx-border-color: white; -fx-border-radius: 50;" text="Acertos:" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="35.0">
+               <font>
+                  <Font name="Verdana" size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="301.0" layoutY="454.0" prefHeight="27.0" prefWidth="64.0" style="-fx-background-color: #F787F7; -fx-background-radius: 33; -fx-border-color: white; -fx-border-radius: 50;" text="Erros:" textFill="WHITE" AnchorPane.bottomAnchor="14.0">
+               <font>
+                  <Font name="Consolas" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="acerto" alignment="CENTER" layoutX="114.0" layoutY="454.0" prefHeight="27.0" prefWidth="36.0" style="-fx-background-color: green; -fx-background-radius: 33; -fx-border-color: black; -fx-border-radius: 50;" textFill="WHITE" AnchorPane.bottomAnchor="14.0">
+               <font>
+                  <Font name="Consolas" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="erro" alignment="CENTER" layoutX="365.0" layoutY="454.0" prefHeight="27.0" prefWidth="36.0" style="-fx-background-color: red; -fx-background-radius: 33; -fx-border-color: black; -fx-border-radius: 50;" textFill="WHITE" AnchorPane.bottomAnchor="14.0">
+               <font>
+                  <Font name="Consolas" size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="164.0" layoutY="34.0" prefHeight="34.0" prefWidth="128.0" style="-fx-background-color: #F787F7; -fx-background-radius: 33; -fx-border-color: white; -fx-border-radius: 50;" text="LETRA:" textFill="WHITE" AnchorPane.leftAnchor="164.0" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="Verdana Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="gerarLetra" alignment="CENTER" layoutX="152.0" layoutY="71.0" prefHeight="34.0" prefWidth="151.0" style="-fx-background-color: #F787F7; -fx-background-radius: 33; -fx-border-color: white; -fx-border-radius: 50;" textFill="WHITE" AnchorPane.leftAnchor="152.0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <Separator layoutX="438.0" orientation="VERTICAL" prefHeight="495.0" prefWidth="8.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Label fx:id="respostas" alignment="TOP_CENTER" layoutY="111.0" prefHeight="19.0" prefWidth="441.0" style="-fx-border-color: white; -fx-border-radius: 16;" text="Respostas:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font></Label>
+            <Label fx:id="lbl01" layoutX="536.0" layoutY="232.0" prefHeight="128.0" prefWidth="151.0" style="-fx-background-color: #F787F7;" stylesheets="@../Styles/button.css" />
+            <Label fx:id="lbl02" layoutX="536.0" layoutY="34.0" prefHeight="128.0" prefWidth="151.0" style="-fx-background-color: #F787F7;" stylesheets="@../Styles/button.css" />
+            <Label fx:id="lbl03" layoutX="766.0" layoutY="34.0" prefHeight="128.0" prefWidth="151.0" style="-fx-background-color: #F787F7;" stylesheets="@../Styles/button.css" />
+            <Label fx:id="lbl04" layoutX="766.0" layoutY="232.0" prefHeight="128.0" prefWidth="151.0" style="-fx-background-color: #F787F7;" stylesheets="@../Styles/button.css" />
+            <Text layoutX="188.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Verdana; -fx-font-size: 15; -fx-font-style: italic;" text="Lado (A)" textAlignment="CENTER" wrappingWidth="79.0" />
+            <Text layoutX="687.0" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Verdana; -fx-font-size: 15; -fx-font-style: italic;" text="Lado (B)" textAlignment="CENTER" wrappingWidth="79.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btJogarDnv" layoutX="874.0" layoutY="596.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="163.0" style="-fx-border-radius: 50;" stylesheets="@../Styles/button.css" text="Jogar Novamente" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="46.0">
+         <padding>
+            <Insets bottom="462.0" left="32.0" right="37.0" top="320.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btAudio" layoutX="557.0" layoutY="596.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="151.0" style="-fx-border-radius: 50;" stylesheets="@../Styles/button.css" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="408.0">
+         <padding>
+            <Insets bottom="462.0" left="32.0" right="37.0" top="320.0" />
+         </padding>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.button {
+    -fx-padding: 10 22 10 22;   
+    -fx-border-color:  #54FF9F;
+    -fx-border-width: 2;
+    -fx-border-radius: 33;
+    -fx-background-radius: 50;
+    -fx-background-color:  #54FF9F;
+    -fx-font-family:  Consolas;
+    -fx-font-size: 12;
+    -fx-text-fill: black;
+    -fx-background-insets: 10;
+}
+
+.button:hover {
+    -fx-background-color: white;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #F787F7;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+.label{
+    
+    -fx-background-radius: 12;
+}

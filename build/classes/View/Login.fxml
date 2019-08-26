@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="742.0" style="-fx-background-color: #F787F7;" stylesheets="@../Styles/button.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <effect>
+      <DropShadow />
+   </effect>
+   <children>
+      <Pane layoutX="8.0" layoutY="420.0" prefHeight="26.0" prefWidth="552.0" style="-fx-background-color: #54FF9F;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="9.0">
+         <children>
+            <Label layoutX="323.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Game launcher" textFill="#656060" underline="true" />
+         </children></Pane>
+      <Button fx:id="btnJogar" layoutX="239.0" layoutY="288.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="264.0" style="-fx-padding: 10 22 10 22; -fx-border-color: #54FF9F; -fx-border-width: 2; -fx-border-radius: 33; -fx-background-radius: 50; -fx-font-family: consolas; -fx-font-size: 12; -fx-text-fill: black; -fx-background-insets: 10;" text="Jogar" AnchorPane.leftAnchor="239.0" AnchorPane.rightAnchor="239.0" />
+      <Button fx:id="btnSair" layoutX="239.0" layoutY="432.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="264.0" style="-fx-padding: 10 22 10 22; -fx-border-color: #54FF9F; -fx-border-width: 2; -fx-border-radius: 33; -fx-background-radius: 50; -fx-font-family: consolas; -fx-font-size: 12; -fx-text-fill: black; -fx-background-insets: 10;" text="Sair" AnchorPane.leftAnchor="239.0" AnchorPane.rightAnchor="239.0" />
+      <Pane layoutX="8.0" layoutY="14.0" prefHeight="111.0" prefWidth="508.0" style="-fx-background-color: #54FF9F;" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <ImageView fitHeight="91.0" fitWidth="361.0" layoutX="182.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Styles/Logon%20inicial.gif" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <ImageView fitHeight="72.0" fitWidth="98.0" layoutX="395.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" rotate="29.1" AnchorPane.rightAnchor="146.5999984741211">
+         <image>
+            <Image url="@../Styles/Animacao_aviao.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="90.0" fitWidth="89.0" layoutX="14.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="29.0">
+         <image>
+            <Image url="@../Styles/Animacao_cachorro.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="136.0" fitWidth="130.0" layoutX="459.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="29.0" AnchorPane.rightAnchor="14.5614013671875">
+         <image>
+            <Image url="@../Styles/Animacao_bola.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="BtnIntrod" layoutX="239.0" layoutY="359.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="264.0" style="-fx-padding: 10 22 10 22; -fx-border-color: #54FF9F; -fx-border-width: 2; -fx-border-radius: 33; -fx-background-radius: 50; -fx-font-family: consolas; -fx-font-size: 12; -fx-text-fill: black; -fx-background-insets: 10;" text="DEMO" AnchorPane.leftAnchor="239.0" AnchorPane.rightAnchor="239.0" />
+   </children>
+</AnchorPane>
