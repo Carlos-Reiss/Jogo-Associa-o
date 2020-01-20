@@ -1,2 +1,3 @@
 # Jogo-Associa-o
-Jogo desenvolvido em Pratica de programação.
+O Jogo foi desenvolvido na disciplina de Pratica de programação.
+utilizando a LP Java e o software JavaFX.
